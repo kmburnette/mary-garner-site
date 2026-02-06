@@ -568,8 +568,7 @@ export default function MaryGarnerDeVoeSite() {
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/75">
                 Share a few details and you’ll receive next steps, availability, and
-                a short intake form. (This is a demo form—wire it to your email/CRM
-                when you launch.)
+                a short intake form. 
               </p>
 
               <div className="mt-6 grid gap-3">
