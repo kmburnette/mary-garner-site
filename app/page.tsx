@@ -670,7 +670,7 @@ export default function MaryGarnerDeVoeSite() {
             </div>
           </div>
           <div className="mt-8 text-xs text-white/50">
-            © {year} Mary Garner DeVoe. All rights reserved.
+            © {year} Mary Garner DeVoe. All rights reserved. | 6739 Falls of Neuse Road, Raleigh, North Carolina 27615 | 919-830-4379
           </div>
         </div>
       </footer>
