@@ -350,9 +350,7 @@ export default function MaryGarnerDeVoeSite() {
                       </CTAButton>
                     </div>
 
-                    <div className="mt-5 text-xs text-white/60">
-                      Headshot file: <span className="text-white/80">/public/mary-garner.jpg</span>
-                    </div>
+   
                   </div>
                 </div>
               </Card>
