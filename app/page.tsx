@@ -588,19 +588,17 @@ export default function MaryGarnerDeVoeSite() {
             </div>
 
             <form
-              className="rounded-2xl border border-white/10 bg-white/5 p-5"
-              onSubmit={(e) => {
-                e.preventDefault();
-                // Demo behavior
-                alert(
-                  "Thanks! Replace this with your email/CRM integration (e.g., Formspree, HubSpot, Zapier)."
-                );
-              }}
+  action="https://formspree.io/f/xdaloozv"
+  method="POST"
+  className="rounded-2xl border border-white/10 bg-white/5 p-5"
+
             >
               <div className="grid gap-3">
                 <label className="grid gap-1">
                   <span className="text-xs font-semibold text-white/70">Name</span>
                   <input
+name="name"
+
                     required
                     className="rounded-2xl border border-white/15 bg-[#0b0b12] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
                     placeholder="Your name"
@@ -609,6 +607,7 @@ export default function MaryGarnerDeVoeSite() {
                 <label className="grid gap-1">
                   <span className="text-xs font-semibold text-white/70">Email</span>
                   <input
+name="email"
                     required
                     type="email"
                     className="rounded-2xl border border-white/15 bg-[#0b0b12] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
@@ -619,7 +618,8 @@ export default function MaryGarnerDeVoeSite() {
                   <span className="text-xs font-semibold text-white/70">
                     I’m interested in
                   </span>
-                  <select className="rounded-2xl border border-white/15 bg-[#0b0b12] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20">
+                <select name="interest" className="rounded-2xl border border-white/15 bg-[#0b0b12] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20">
+
                     <option>1:1 Coaching</option>
                     <option>Team / Brokerage Mentoring</option>
                     <option>Speaking</option>
@@ -630,6 +630,7 @@ export default function MaryGarnerDeVoeSite() {
                     Message
                   </span>
                   <textarea
+name="message"
                     required
                     rows={5}
                     className="resize-none rounded-2xl border border-white/15 bg-[#0b0b12] px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
