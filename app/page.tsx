@@ -18,13 +18,14 @@ import {
 // Single-file, production-ready landing site draft.
 // Replace placeholder links + copy with verified details.
 
-const Pill = ({ children }) => (
+const Pill = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80">
     {children}
   </span>
 );
 
-const Section = ({ id, title, kicker, children }) => (
+const Section = ({ id, title, kicker, children }: { id: string; title?: string; kicker?: string; children: React.ReactNode }) => (
+
   <section id={id} className="relative mx-auto max-w-6xl px-6 py-16 md:py-20">
     <div className="mb-10">
       {kicker && (
@@ -42,7 +43,8 @@ const Section = ({ id, title, kicker, children }) => (
   </section>
 );
 
-const Card = ({ className = "", children }) => (
+const Card = ({ className = "", children }: { className?: string; children: React.ReactNode }) => (
+
   <div
     className={`rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_10px_50px_-20px_rgba(0,0,0,0.7)] backdrop-blur ${className}`}
   >
@@ -50,7 +52,8 @@ const Card = ({ className = "", children }) => (
   </div>
 );
 
-const CTAButton = ({ href = "#contact", children, variant = "primary" }) => {
+const CTAButton = ({ href = "#contact", children, variant = "primary" }: { href?: string; children: React.ReactNode; variant?: "primary" | "secondary" }) => {
+
   const base =
     "inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-white/30";
   const styles =
@@ -64,7 +67,8 @@ const CTAButton = ({ href = "#contact", children, variant = "primary" }) => {
   );
 };
 
-const NavLink = ({ href, children }) => (
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
+
   <a
     href={href}
     className="text-sm text-white/75 hover:text-white transition"
@@ -167,11 +171,13 @@ const faqs = [
 const gradients =
   "before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.14),transparent_45%),radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.10),transparent_40%),radial-gradient(circle_at_50%_80%,rgba(255,255,255,0.08),transparent_40%)] before:opacity-100 before:content-['']";
 
-function Anchor({ id }) {
+function Anchor({ id }: { id: string }) {
   return <div id={id} className="absolute -top-24" />;
+
 }
 
-function FAQItem({ item, i }) {
+function FAQItem({ item, i }: { item: { q: string; a: string }; i: number }) {
+
   const [open, setOpen] = useState(i === 0);
   return (
     <button
