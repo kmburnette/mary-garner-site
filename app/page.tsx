@@ -478,7 +478,7 @@ export default function MaryGarnerDeVoeSite() {
               <div className="flex flex-wrap gap-3">
                 <CTAButton href="#contact">Request availability</CTAButton>
                 <CTAButton href="#contact" variant="secondary">
-                  Download media kit (placeholder)
+                  Request media kit by emailing marygdevoe@gmail.com
                 </CTAButton>
               </div>
             </div>
@@ -491,7 +491,7 @@ export default function MaryGarnerDeVoeSite() {
         <div className="grid gap-5 md:grid-cols-[0.9fr_1.1fr] md:items-start">
           <Card>
             <div className="text-sm font-semibold text-white/90">
-              Bio (replace with verified details)
+              Bio
             </div>
             <p className="mt-3 text-sm leading-relaxed text-white/75">
               Mary Garner DeVoe is a leadership and growth coach who helps
@@ -506,8 +506,8 @@ export default function MaryGarnerDeVoeSite() {
                 Travel by request
               </div>
               <div className="flex items-center gap-2 text-sm text-white/75">
-                <Mail className="h-4 w-4 text-white/60" /> hello@yourdomain.com
-                (placeholder)
+                <Mail className="h-4 w-4 text-white/60" /> marygdevoe@gmail.com
+             
               </div>
             </div>
           </Card>
@@ -647,7 +647,7 @@ export default function MaryGarnerDeVoeSite() {
 
               <div className="mt-4 text-xs text-white/60">
                 Prefer email?{" "}
-                <span className="text-white/80">hello@yourdomain.com</span>
+                <span className="text-white/80">marygdevoe@gmail.com</span>
               </div>
             </form>
           </div>
